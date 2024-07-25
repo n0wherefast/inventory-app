@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <title><%= title %></title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1><%= title  %></h1>
+        <a href="/">home </a>
+    </nav>
+    <div class="container">
+    <form action="/new" method="post" class="form">
+        <label for="">Title</label>
+        <input type="text" name="title" placeholder="title" >
+        <label for="">Price</label>
+        <input type="number" name="price" placeholder="price" >
+        <label for="">Description</label>
+        <input type="text" name="description" placeholder="description" >
+         <label for="">Category</label>
+        <select name="category" id="category">
+            <option value="jewelery">jewelery</option>
+            <option value="electronics">electronics</option>
+            <option value="men's clothing">men's clothing</option>
+            <option value="women's clothing">women's clothing</option>
+          </select>
+        <label for="">Image</label>
+        <input type="text" name="image" placeholder="image" >
+        <label for="">Rating</label>
+        <input type="number" name="rate" placeholder="rate" >
+        <input type="number" name="count" placeholder="count" >
+        <input type="submit" value="Send" />
+    </form>
+</div>
+</body>
+</html>
+
+
