@@ -2,7 +2,7 @@
 const h1 = document.querySelector('h1')
 const product = document.getElementById('product')
 
-h1.innerHTML='Iventory App'
+h1.innerHTML='Inventory App'
 
 
 const fetchProd = async () =>{
